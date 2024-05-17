@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1124FF8C4EBB65900D3E9CE8 /* Pods_Alchemist_AlchemistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785AD996D2B10D459200824D /* Pods_Alchemist_AlchemistUITests.framework */; };
+		4BB8DE918596904F01379CA4 /* Pods_AlchemistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9274F912E36E2860251A7AC2 /* Pods_AlchemistTests.framework */; };
+		D02FEDD62BF6274400394CDF /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FEDD52BF6274400394CDF /* CoreAssembly.swift */; };
+		D02FEDDA2BF6298C00394CDF /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FEDD92BF6298C00394CDF /* Difficulty.swift */; };
+		D02FEDDC2BF62B6700394CDF /* GameFlowCoordinator+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FEDDB2BF62B6700394CDF /* GameFlowCoordinator+Build.swift */; };
+		D02FEDDF2BF62E4400394CDF /* GameFlowCoordinatorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FEDDE2BF62E4400394CDF /* GameFlowCoordinatorModule.swift */; };
+		D02FEDE12BF6445100394CDF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FEDE02BF6445100394CDF /* Game.swift */; };
+		D02FEDE32BF64BBE00394CDF /* ChemistryEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FEDE22BF64BBE00394CDF /* ChemistryEngineTests.swift */; };
+		D04C75942BF50549000D0D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75932BF50549000D0D7D /* AppDelegate.swift */; };
+		D04C75962BF50549000D0D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75952BF50549000D0D7D /* SceneDelegate.swift */; };
+		D04C759D2BF50549000D0D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04C759C2BF50549000D0D7D /* Assets.xcassets */; };
+		D04C75A02BF50549000D0D7D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D04C759F2BF50549000D0D7D /* Base */; };
+		D04C75AB2BF5054A000D0D7D /* AlchemistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75AA2BF5054A000D0D7D /* AlchemistTests.swift */; };
+		D04C75B52BF5054A000D0D7D /* AlchemistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75B42BF5054A000D0D7D /* AlchemistUITests.swift */; };
+		D04C75B72BF5054A000D0D7D /* AlchemistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75B62BF5054A000D0D7D /* AlchemistUITestsLaunchTests.swift */; };
+		D04C75C42BF505BD000D0D7D /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75C32BF505BD000D0D7D /* ApplicationFlowCoordinator.swift */; };
+		D04C75C62BF505C9000D0D7D /* FlowCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75C52BF505C9000D0D7D /* FlowCoordination.swift */; };
+		D04C75CA2BF50782000D0D7D /* GameFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75C92BF50782000D0D7D /* GameFlowCoordinator.swift */; };
+		D04C75CC2BF508B1000D0D7D /* GameStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75CB2BF508B1000D0D7D /* GameStartView.swift */; };
+		D04C75CF2BF50930000D0D7D /* GameStartViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75CE2BF50930000D0D7D /* GameStartViewWrapper.swift */; };
+		D04C75D12BF50C6B000D0D7D /* GameStartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75D02BF50C6B000D0D7D /* GameStartViewModel.swift */; };
+		D04C75D42BF50D4C000D0D7D /* ChemistryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75D32BF50D4C000D0D7D /* ChemistryEngine.swift */; };
+		D04C75D62BF50EC1000D0D7D /* ChemistryEngineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75D52BF50EC1000D0D7D /* ChemistryEngineModel.swift */; };
+		D04C75D92BF5100C000D0D7D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75D82BF5100C000D0D7D /* GameView.swift */; };
+		D04C75DB2BF514D0000D0D7D /* GameViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75DA2BF514D0000D0D7D /* GameViewWrapper.swift */; };
+		D04C75DD2BF51820000D0D7D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C75DC2BF51820000D0D7D /* GameViewModel.swift */; };
+		F3D02131F8738F09BB2B11A6 /* Pods_Alchemist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDECC0399B74C6482C21DD4E /* Pods_Alchemist.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D04C75A72BF5054A000D0D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D04C75882BF50548000D0D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04C758F2BF50548000D0D7D;
+			remoteInfo = Alchemist;
+		};
+		D04C75B12BF5054A000D0D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D04C75882BF50548000D0D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04C758F2BF50548000D0D7D;
+			remoteInfo = Alchemist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		233668A966250929D320F7EA /* Pods-Alchemist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alchemist.release.xcconfig"; path = "Target Support Files/Pods-Alchemist/Pods-Alchemist.release.xcconfig"; sourceTree = "<group>"; };
+		5645892CDE55DC48A36CA7F1 /* Pods-AlchemistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlchemistTests.debug.xcconfig"; path = "Target Support Files/Pods-AlchemistTests/Pods-AlchemistTests.debug.xcconfig"; sourceTree = "<group>"; };
+		748BBF42CAE3CFDDFD02FD73 /* Pods-Alchemist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alchemist.debug.xcconfig"; path = "Target Support Files/Pods-Alchemist/Pods-Alchemist.debug.xcconfig"; sourceTree = "<group>"; };
+		785AD996D2B10D459200824D /* Pods_Alchemist_AlchemistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alchemist_AlchemistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9274F912E36E2860251A7AC2 /* Pods_AlchemistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlchemistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA34C44E174631D2EF294EA /* Pods-AlchemistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlchemistTests.release.xcconfig"; path = "Target Support Files/Pods-AlchemistTests/Pods-AlchemistTests.release.xcconfig"; sourceTree = "<group>"; };
+		D02FEDD52BF6274400394CDF /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		D02FEDD92BF6298C00394CDF /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		D02FEDDB2BF62B6700394CDF /* GameFlowCoordinator+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameFlowCoordinator+Build.swift"; sourceTree = "<group>"; };
+		D02FEDDE2BF62E4400394CDF /* GameFlowCoordinatorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFlowCoordinatorModule.swift; sourceTree = "<group>"; };
+		D02FEDE02BF6445100394CDF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D02FEDE22BF64BBE00394CDF /* ChemistryEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemistryEngineTests.swift; sourceTree = "<group>"; };
+		D04C75902BF50548000D0D7D /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04C75932BF50549000D0D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D04C75952BF50549000D0D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D04C759C2BF50549000D0D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D04C759F2BF50549000D0D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D04C75A12BF50549000D0D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D04C75A62BF5054A000D0D7D /* AlchemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04C75AA2BF5054A000D0D7D /* AlchemistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistTests.swift; sourceTree = "<group>"; };
+		D04C75B02BF5054A000D0D7D /* AlchemistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04C75B42BF5054A000D0D7D /* AlchemistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistUITests.swift; sourceTree = "<group>"; };
+		D04C75B62BF5054A000D0D7D /* AlchemistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D04C75C32BF505BD000D0D7D /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
+		D04C75C52BF505C9000D0D7D /* FlowCoordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordination.swift; sourceTree = "<group>"; };
+		D04C75C92BF50782000D0D7D /* GameFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFlowCoordinator.swift; sourceTree = "<group>"; };
+		D04C75CB2BF508B1000D0D7D /* GameStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartView.swift; sourceTree = "<group>"; };
+		D04C75CE2BF50930000D0D7D /* GameStartViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewWrapper.swift; sourceTree = "<group>"; };
+		D04C75D02BF50C6B000D0D7D /* GameStartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewModel.swift; sourceTree = "<group>"; };
+		D04C75D32BF50D4C000D0D7D /* ChemistryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemistryEngine.swift; sourceTree = "<group>"; };
+		D04C75D52BF50EC1000D0D7D /* ChemistryEngineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemistryEngineModel.swift; sourceTree = "<group>"; };
+		D04C75D82BF5100C000D0D7D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D04C75DA2BF514D0000D0D7D /* GameViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewWrapper.swift; sourceTree = "<group>"; };
+		D04C75DC2BF51820000D0D7D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		DF75A9121A91A780E5E879FA /* Pods-Alchemist-AlchemistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alchemist-AlchemistUITests.release.xcconfig"; path = "Target Support Files/Pods-Alchemist-AlchemistUITests/Pods-Alchemist-AlchemistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F63EB800E25303B478AD4E41 /* Pods-Alchemist-AlchemistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alchemist-AlchemistUITests.debug.xcconfig"; path = "Target Support Files/Pods-Alchemist-AlchemistUITests/Pods-Alchemist-AlchemistUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDECC0399B74C6482C21DD4E /* Pods_Alchemist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alchemist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D04C758D2BF50548000D0D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D02131F8738F09BB2B11A6 /* Pods_Alchemist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C75A32BF5054A000D0D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB8DE918596904F01379CA4 /* Pods_AlchemistTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C75AD2BF5054A000D0D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1124FF8C4EBB65900D3E9CE8 /* Pods_Alchemist_AlchemistUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D02FEDD72BF6274900394CDF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D02FEDD52BF6274400394CDF /* CoreAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D02FEDD82BF6297C00394CDF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D02FEDD92BF6298C00394CDF /* Difficulty.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D02FEDDD2BF62E2F00394CDF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D02FEDDE2BF62E4400394CDF /* GameFlowCoordinatorModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D04C75872BF50548000D0D7D = {
+			isa = PBXGroup;
+			children = (
+				D04C75922BF50548000D0D7D /* Alchemist */,
+				D04C75A92BF5054A000D0D7D /* AlchemistTests */,
+				D04C75B32BF5054A000D0D7D /* AlchemistUITests */,
+				D04C75912BF50548000D0D7D /* Products */,
+				F19E6C379E5324F19032F62D /* Pods */,
+				EC072F8F73E1FCA2BCA31296 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D04C75912BF50548000D0D7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75902BF50548000D0D7D /* Alchemist.app */,
+				D04C75A62BF5054A000D0D7D /* AlchemistTests.xctest */,
+				D04C75B02BF5054A000D0D7D /* AlchemistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D04C75922BF50548000D0D7D /* Alchemist */ = {
+			isa = PBXGroup;
+			children = (
+				D02FEDD82BF6297C00394CDF /* Domain */,
+				D02FEDD72BF6274900394CDF /* DI */,
+				D04C75D22BF50D24000D0D7D /* Laboratory */,
+				D04C75C72BF50625000D0D7D /* Application */,
+				D04C75C82BF506E1000D0D7D /* [Flow] - Game */,
+				D04C759C2BF50549000D0D7D /* Assets.xcassets */,
+				D04C759E2BF50549000D0D7D /* LaunchScreen.storyboard */,
+				D04C75A12BF50549000D0D7D /* Info.plist */,
+			);
+			path = Alchemist;
+			sourceTree = "<group>";
+		};
+		D04C75A92BF5054A000D0D7D /* AlchemistTests */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75AA2BF5054A000D0D7D /* AlchemistTests.swift */,
+				D02FEDE22BF64BBE00394CDF /* ChemistryEngineTests.swift */,
+			);
+			path = AlchemistTests;
+			sourceTree = "<group>";
+		};
+		D04C75B32BF5054A000D0D7D /* AlchemistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75B42BF5054A000D0D7D /* AlchemistUITests.swift */,
+				D04C75B62BF5054A000D0D7D /* AlchemistUITestsLaunchTests.swift */,
+			);
+			path = AlchemistUITests;
+			sourceTree = "<group>";
+		};
+		D04C75C72BF50625000D0D7D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75932BF50549000D0D7D /* AppDelegate.swift */,
+				D04C75952BF50549000D0D7D /* SceneDelegate.swift */,
+				D04C75C32BF505BD000D0D7D /* ApplicationFlowCoordinator.swift */,
+				D04C75C52BF505C9000D0D7D /* FlowCoordination.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D04C75C82BF506E1000D0D7D /* [Flow] - Game */ = {
+			isa = PBXGroup;
+			children = (
+				D02FEDDD2BF62E2F00394CDF /* DI */,
+				D02FEDDB2BF62B6700394CDF /* GameFlowCoordinator+Build.swift */,
+				D04C75C92BF50782000D0D7D /* GameFlowCoordinator.swift */,
+				D04C75CD2BF508C7000D0D7D /* GameStart */,
+				D04C75D72BF50FEA000D0D7D /* Game */,
+			);
+			path = "[Flow] - Game";
+			sourceTree = "<group>";
+		};
+		D04C75CD2BF508C7000D0D7D /* GameStart */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75CE2BF50930000D0D7D /* GameStartViewWrapper.swift */,
+				D04C75CB2BF508B1000D0D7D /* GameStartView.swift */,
+				D04C75D02BF50C6B000D0D7D /* GameStartViewModel.swift */,
+			);
+			path = GameStart;
+			sourceTree = "<group>";
+		};
+		D04C75D22BF50D24000D0D7D /* Laboratory */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75D32BF50D4C000D0D7D /* ChemistryEngine.swift */,
+				D04C75D52BF50EC1000D0D7D /* ChemistryEngineModel.swift */,
+			);
+			path = Laboratory;
+			sourceTree = "<group>";
+		};
+		D04C75D72BF50FEA000D0D7D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D04C75DA2BF514D0000D0D7D /* GameViewWrapper.swift */,
+				D04C75D82BF5100C000D0D7D /* GameView.swift */,
+				D04C75DC2BF51820000D0D7D /* GameViewModel.swift */,
+				D02FEDE02BF6445100394CDF /* Game.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		EC072F8F73E1FCA2BCA31296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDECC0399B74C6482C21DD4E /* Pods_Alchemist.framework */,
+				785AD996D2B10D459200824D /* Pods_Alchemist_AlchemistUITests.framework */,
+				9274F912E36E2860251A7AC2 /* Pods_AlchemistTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F19E6C379E5324F19032F62D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748BBF42CAE3CFDDFD02FD73 /* Pods-Alchemist.debug.xcconfig */,
+				233668A966250929D320F7EA /* Pods-Alchemist.release.xcconfig */,
+				F63EB800E25303B478AD4E41 /* Pods-Alchemist-AlchemistUITests.debug.xcconfig */,
+				DF75A9121A91A780E5E879FA /* Pods-Alchemist-AlchemistUITests.release.xcconfig */,
+				5645892CDE55DC48A36CA7F1 /* Pods-AlchemistTests.debug.xcconfig */,
+				CFA34C44E174631D2EF294EA /* Pods-AlchemistTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D04C758F2BF50548000D0D7D /* Alchemist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04C75BA2BF5054A000D0D7D /* Build configuration list for PBXNativeTarget "Alchemist" */;
+			buildPhases = (
+				E7339187322ADE9DCC1DDFB0 /* [CP] Check Pods Manifest.lock */,
+				D04C758C2BF50548000D0D7D /* Sources */,
+				D04C758D2BF50548000D0D7D /* Frameworks */,
+				D04C758E2BF50548000D0D7D /* Resources */,
+				2C7E5697ABE6B56A5FC916FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alchemist;
+			productName = Alchemist;
+			productReference = D04C75902BF50548000D0D7D /* Alchemist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D04C75A52BF5054A000D0D7D /* AlchemistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04C75BD2BF5054A000D0D7D /* Build configuration list for PBXNativeTarget "AlchemistTests" */;
+			buildPhases = (
+				78CDFE57DB8993D026535A8C /* [CP] Check Pods Manifest.lock */,
+				D04C75A22BF5054A000D0D7D /* Sources */,
+				D04C75A32BF5054A000D0D7D /* Frameworks */,
+				D04C75A42BF5054A000D0D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04C75A82BF5054A000D0D7D /* PBXTargetDependency */,
+			);
+			name = AlchemistTests;
+			productName = AlchemistTests;
+			productReference = D04C75A62BF5054A000D0D7D /* AlchemistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D04C75AF2BF5054A000D0D7D /* AlchemistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04C75C02BF5054A000D0D7D /* Build configuration list for PBXNativeTarget "AlchemistUITests" */;
+			buildPhases = (
+				580B73B40AFE91B6C59D9D7C /* [CP] Check Pods Manifest.lock */,
+				D04C75AC2BF5054A000D0D7D /* Sources */,
+				D04C75AD2BF5054A000D0D7D /* Frameworks */,
+				D04C75AE2BF5054A000D0D7D /* Resources */,
+				2EBA581D0FC4DABCDEDE38B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04C75B22BF5054A000D0D7D /* PBXTargetDependency */,
+			);
+			name = AlchemistUITests;
+			productName = AlchemistUITests;
+			productReference = D04C75B02BF5054A000D0D7D /* AlchemistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D04C75882BF50548000D0D7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D04C758F2BF50548000D0D7D = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D04C75A52BF5054A000D0D7D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D04C758F2BF50548000D0D7D;
+					};
+					D04C75AF2BF5054A000D0D7D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D04C758F2BF50548000D0D7D;
+					};
+				};
+			};
+			buildConfigurationList = D04C758B2BF50548000D0D7D /* Build configuration list for PBXProject "Alchemist" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D04C75872BF50548000D0D7D;
+			productRefGroup = D04C75912BF50548000D0D7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D04C758F2BF50548000D0D7D /* Alchemist */,
+				D04C75A52BF5054A000D0D7D /* AlchemistTests */,
+				D04C75AF2BF5054A000D0D7D /* AlchemistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D04C758E2BF50548000D0D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04C759D2BF50549000D0D7D /* Assets.xcassets in Resources */,
+				D04C75A02BF50549000D0D7D /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C75A42BF5054A000D0D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C75AE2BF5054A000D0D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C7E5697ABE6B56A5FC916FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alchemist/Pods-Alchemist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alchemist/Pods-Alchemist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alchemist/Pods-Alchemist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EBA581D0FC4DABCDEDE38B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alchemist-AlchemistUITests/Pods-Alchemist-AlchemistUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alchemist-AlchemistUITests/Pods-Alchemist-AlchemistUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alchemist-AlchemistUITests/Pods-Alchemist-AlchemistUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		580B73B40AFE91B6C59D9D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alchemist-AlchemistUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78CDFE57DB8993D026535A8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlchemistTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7339187322ADE9DCC1DDFB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alchemist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D04C758C2BF50548000D0D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04C75C42BF505BD000D0D7D /* ApplicationFlowCoordinator.swift in Sources */,
+				D02FEDE12BF6445100394CDF /* Game.swift in Sources */,
+				D04C75942BF50549000D0D7D /* AppDelegate.swift in Sources */,
+				D02FEDDA2BF6298C00394CDF /* Difficulty.swift in Sources */,
+				D04C75D42BF50D4C000D0D7D /* ChemistryEngine.swift in Sources */,
+				D04C75C62BF505C9000D0D7D /* FlowCoordination.swift in Sources */,
+				D04C75D62BF50EC1000D0D7D /* ChemistryEngineModel.swift in Sources */,
+				D04C75CF2BF50930000D0D7D /* GameStartViewWrapper.swift in Sources */,
+				D04C75DD2BF51820000D0D7D /* GameViewModel.swift in Sources */,
+				D04C75D92BF5100C000D0D7D /* GameView.swift in Sources */,
+				D04C75962BF50549000D0D7D /* SceneDelegate.swift in Sources */,
+				D04C75CA2BF50782000D0D7D /* GameFlowCoordinator.swift in Sources */,
+				D02FEDDC2BF62B6700394CDF /* GameFlowCoordinator+Build.swift in Sources */,
+				D04C75CC2BF508B1000D0D7D /* GameStartView.swift in Sources */,
+				D04C75D12BF50C6B000D0D7D /* GameStartViewModel.swift in Sources */,
+				D02FEDD62BF6274400394CDF /* CoreAssembly.swift in Sources */,
+				D04C75DB2BF514D0000D0D7D /* GameViewWrapper.swift in Sources */,
+				D02FEDDF2BF62E4400394CDF /* GameFlowCoordinatorModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C75A22BF5054A000D0D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02FEDE32BF64BBE00394CDF /* ChemistryEngineTests.swift in Sources */,
+				D04C75AB2BF5054A000D0D7D /* AlchemistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C75AC2BF5054A000D0D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04C75B52BF5054A000D0D7D /* AlchemistUITests.swift in Sources */,
+				D04C75B72BF5054A000D0D7D /* AlchemistUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D04C75A82BF5054A000D0D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04C758F2BF50548000D0D7D /* Alchemist */;
+			targetProxy = D04C75A72BF5054A000D0D7D /* PBXContainerItemProxy */;
+		};
+		D04C75B22BF5054A000D0D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04C758F2BF50548000D0D7D /* Alchemist */;
+			targetProxy = D04C75B12BF5054A000D0D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D04C759E2BF50549000D0D7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D04C759F2BF50549000D0D7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D04C75B82BF5054A000D0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D04C75B92BF5054A000D0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D04C75BB2BF5054A000D0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748BBF42CAE3CFDDFD02FD73 /* Pods-Alchemist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJP9D8D74B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alchemist/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Alchemist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihancinar.Alchemist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D04C75BC2BF5054A000D0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233668A966250929D320F7EA /* Pods-Alchemist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJP9D8D74B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alchemist/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Alchemist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihancinar.Alchemist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D04C75BE2BF5054A000D0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5645892CDE55DC48A36CA7F1 /* Pods-AlchemistTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJP9D8D74B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihancinar.AlchemistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alchemist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Alchemist";
+			};
+			name = Debug;
+		};
+		D04C75BF2BF5054A000D0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA34C44E174631D2EF294EA /* Pods-AlchemistTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJP9D8D74B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihancinar.AlchemistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alchemist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Alchemist";
+			};
+			name = Release;
+		};
+		D04C75C12BF5054A000D0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63EB800E25303B478AD4E41 /* Pods-Alchemist-AlchemistUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJP9D8D74B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihancinar.AlchemistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alchemist;
+			};
+			name = Debug;
+		};
+		D04C75C22BF5054A000D0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF75A9121A91A780E5E879FA /* Pods-Alchemist-AlchemistUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJP9D8D74B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihancinar.AlchemistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alchemist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D04C758B2BF50548000D0D7D /* Build configuration list for PBXProject "Alchemist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04C75B82BF5054A000D0D7D /* Debug */,
+				D04C75B92BF5054A000D0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04C75BA2BF5054A000D0D7D /* Build configuration list for PBXNativeTarget "Alchemist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04C75BB2BF5054A000D0D7D /* Debug */,
+				D04C75BC2BF5054A000D0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04C75BD2BF5054A000D0D7D /* Build configuration list for PBXNativeTarget "AlchemistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04C75BE2BF5054A000D0D7D /* Debug */,
+				D04C75BF2BF5054A000D0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04C75C02BF5054A000D0D7D /* Build configuration list for PBXNativeTarget "AlchemistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04C75C12BF5054A000D0D7D /* Debug */,
+				D04C75C22BF5054A000D0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D04C75882BF50548000D0D7D /* Project object */;
+}
